@@ -1,6 +1,6 @@
 # WhatsApp Lists for Podkop
 
-Автоматически обновляемые списки доменов и IP-адресов WhatsApp для обхода блокировок через Podkop на OpenWRT.
+Автоматически обновляемые списки доменов и IP-адресов WhatsApp для Podkop на OpenWRT.
 
 ## Как это работает?
 
