@@ -1,5 +1,3 @@
-# Создаем простой рабочий workflow
-cat > .github/workflows/update-lists-simple.yml << 'EOF'
 name: Update WhatsApp Lists
 
 on:
@@ -76,4 +74,3 @@ CIDR
           git commit -m "Update WhatsApp lists: $(date '+%Y-%m-%d %H:%M:%S')"
           git push
         fi
-EOF
