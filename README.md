@@ -1,6 +1,6 @@
-# WhatsApp Lists for PodKop
+# WhatsApp Lists for Podkop
 
-Автоматически обновляемые списки доменов и IP-адресов WhatsApp для обхода блокировок через PodKop на OpenWRT.
+Автоматически обновляемые списки доменов и IP-адресов WhatsApp для обхода блокировок через Podkop на OpenWRT.
 
 ## Как это работает?
 
@@ -8,13 +8,13 @@
 2. **Скрипт обнаружения** ищет актуальные домены и IP WhatsApp
 3. **Списки проверяются** на работоспособность
 4. **Результаты публикуются** в этом репозитории
-5. **PodKop** подтягивает обновления по URL
+5. **Podkop** подтягивает обновления по URL
 
 ## Использование
 
-### Для пользователей PodKop:
+### Для пользователей Podkop:
 
-Просто добавьте эти URL в настройках PodKop:
+Просто добавьте эти URL в настройках Podkop:
 
 - **Домены:** `https://raw.githubusercontent.com/KharunDima/whatsapp-lists/main/lists/domains.txt`
 - **CIDR:** `https://raw.githubusercontent.com/KharunDima/whatsapp-lists/main/lists/cidr.txt`
@@ -47,7 +47,7 @@ text
 2. **Скопируйте все файлы** из структуры выше
 3. **Замените `KharunDima`** на ваш GitHub username
 4. **Запустите workflow вручную** через Actions → Update WhatsApp Lists → Run workflow
-5. **Добавьте ссылки в PodKop** как указано в инструкции
+5. **Добавьте ссылки в Podkop** как указано в инструкции
 
 ## **Преимущества этого подхода:**
 
