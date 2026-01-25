@@ -1,0 +1,59 @@
+# WhatsApp Lists for PodKop
+
+Автоматически обновляемые списки доменов и IP-адресов WhatsApp для обхода блокировок через PodKop на OpenWRT.
+
+## Как это работает?
+
+1. **GitHub Actions** запускается каждые 6 часов
+2. **Скрипт обнаружения** ищет актуальные домены и IP WhatsApp
+3. **Списки проверяются** на работоспособность
+4. **Результаты публикуются** в этом репозитории
+5. **PodKop** подтягивает обновления по URL
+
+## Использование
+
+### Для пользователей PodKop:
+
+Просто добавьте эти URL в настройках PodKop:
+
+- **Домены:** `https://raw.githubusercontent.com/KharunDima/whatsapp-lists/main/lists/domains.txt`
+- **CIDR:** `https://raw.githubusercontent.com/KharunDima/whatsapp-lists/main/lists/cidr.txt`
+
+### Для разработчиков:
+
+```bash
+# Клонировать репозиторий
+git clone https://github.com/KharunDima/whatsapp-lists.git
+
+# Запустить скрипт обнаружения вручную
+cd whatsapp-lists
+chmod +x scripts/discover.sh
+./scripts/discover.sh
+Структура
+text
+├── .github/workflows/    # Автоматические обновления
+├── scripts/              # Скрипты обнаружения
+├── lists/                # Актуальные списки
+├── history/              # Архив версий
+└── podkop-instructions.txt  # Инструкция
+Лицензия
+MIT
+
+text
+
+## **Как запустить:**
+
+1. **Создайте новый репозиторий** на GitHub
+2. **Скопируйте все файлы** из структуры выше
+3. **Замените `KharunDima`** на ваш GitHub username
+4. **Запустите workflow вручную** через Actions → Update WhatsApp Lists → Run workflow
+5. **Добавьте ссылки в PodKop** как указано в инструкции
+
+## **Преимущества этого подхода:**
+
+✅ **Автоматическое обновление** - каждые 6 часов  
+✅ **Проверка работоспособности** - скрипт верификации  
+✅ **История изменений** - можно откатиться  
+✅ **Простота для пользователей** - только 2 URL  
+✅ **Надежность** - работает даже если скрипт упал  
+✅ **Прозрачность** - все изменения в истории Git  
