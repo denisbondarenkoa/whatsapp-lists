@@ -15,14 +15,73 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Create lists
+    - name: Create full WhatsApp lists
       run: |
         mkdir -p lists
-        echo "whatsapp.com" > lists/domains.txt
-        echo "web.whatsapp.com" >> lists/domains.txt
-        echo "api.whatsapp.com" >> lists/domains.txt
-        echo "31.13.0.0/16" > lists/cidr.txt
-        echo "157.240.0.0/16" >> lists/cidr.txt
+        
+        # ПОЛНЫЙ список доменов WhatsApp
+        cat > lists/domains.txt << 'DOMAINS_EOF'
+# WhatsApp domains (updated: $(date))
+whatsapp.com
+www.whatsapp.com
+web.whatsapp.com
+api.whatsapp.com
+chat.whatsapp.com
+call.whatsapp.com
+voice.whatsapp.com
+status.whatsapp.com
+updates.whatsapp.com
+beta.whatsapp.com
+s.whatsapp.net
+static.whatsapp.net
+mmg.whatsapp.net
+mmi.whatsapp.net
+mms.whatsapp.net
+v.whatsapp.net
+voip.whatsapp.com
+media.fbsbx.com
+facebook.com
+www.facebook.com
+fb.com
+www.fb.com
+messenger.com
+www.messenger.com
+fbcdn.net
+static.xx.fbcdn.net
+scontent.xx.fbcdn.net
+scontent.cdninstagram.com
+instagram.com
+www.instagram.com
+DOMAINS_EOF
+        
+        # ПОЛНЫЙ список CIDR
+        cat > lists/cidr.txt << 'CIDR_EOF'
+# Meta/WhatsApp IP ranges (updated: $(date))
+31.13.24.0/21
+31.13.64.0/18
+45.64.40.0/22
+66.220.144.0/20
+69.63.176.0/20
+69.171.224.0/19
+74.119.76.0/22
+102.132.96.0/20
+103.4.96.0/22
+129.134.0.0/16
+157.240.0.0/16
+173.252.64.0/18
+185.60.216.0/22
+199.201.64.0/22
+204.15.20.0/22
+31.13.72.0/24
+31.13.73.0/24
+31.13.74.0/24
+31.13.75.0/24
+57.144.245.0/24
+CIDR_EOF
+        
+        echo "✅ Created full lists:"
+        echo "   Domains: $(wc -l < lists/domains.txt)"
+        echo "   CIDR: $(wc -l < lists/cidr.txt)"
 
     - name: Commit
       run: |
@@ -30,6 +89,8 @@ jobs:
         git config --global user.email "actions@github.com"
         git add lists/
         if ! git diff --cached --quiet; then
-          git commit -m "Update: $(date)"
+          git commit -m "Update WhatsApp lists: $(date '+%Y-%m-%d %H:%M:%S')"
           git push
+        else
+          echo "No changes to commit"
         fi
