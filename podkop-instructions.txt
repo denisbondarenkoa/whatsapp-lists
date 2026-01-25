@@ -12,7 +12,7 @@ https://raw.githubusercontent.com/KharunDima/whatsapp-lists/main/lists/cidr.txt
 
 ## ⚡ Быстрая настройка
 
-В веб-интерфейсе PodKop:
+В веб-интерфейсе Podkop:
 
 1. **Секции** → **Внешние списки доменов** → **URL**
 URL: https://raw.githubusercontent.com/KharunDima/whatsapp-lists/main/lists/domains.txt
@@ -45,7 +45,7 @@ https://raw.githubusercontent.com/KharunDima/whatsapp-lists/main/lists/domains.t
 curl -o /tmp/whatsapp-cidr.txt \
 https://raw.githubusercontent.com/KharunDima/whatsapp-lists/main/lists/cidr.txt
 
-# Обновить в PodKop
+# Обновить в Podkop
 uci set podkop.@whatsapp_domains[0].list="$(cat /tmp/whatsapp-domains.txt)"
 uci set podkop.@whatsapp_cidr[0].list="$(cat /tmp/whatsapp-cidr.txt)"
 uci commit podkop
