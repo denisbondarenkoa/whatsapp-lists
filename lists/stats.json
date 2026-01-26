@@ -1,0 +1,14 @@
+{
+  "generated": "2026-01-26T11:31:57+00:00",
+  "domains": {
+    "total": 33,
+    "minimal": 10,
+    "full": 28
+  },
+  "cidr": {
+    "total": 25,
+    "minimal": 5,
+    "full": 20
+  },
+  "source": "github.com/denisbondarenkoa/whatsapp-lists"
+}

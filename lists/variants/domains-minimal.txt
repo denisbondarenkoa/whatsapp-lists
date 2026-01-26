@@ -1,0 +1,10 @@
+api.whatsapp.com
+beta.whatsapp.com
+call.whatsapp.com
+chat.whatsapp.com
+facebook.com
+fb.com
+fbcdn.net
+instagram.com
+messenger.com
+mmg.whatsapp.net
