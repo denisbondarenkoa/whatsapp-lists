@@ -1,39 +1,33 @@
-# WhatsApp domains
-whatsapp.com
-www.whatsapp.com
-web.whatsapp.com
+# Generated: 2026-02-26 06:50:40
+# Source: WhatsApp Discovery Script
+# Total entries: 28
+# Use in PodKop: Add as URL list
+#
 api.whatsapp.com
-chat.whatsapp.com
-call.whatsapp.com
-voice.whatsapp.com
-status.whatsapp.com
-updates.whatsapp.com
 beta.whatsapp.com
-
-# WhatsApp.net domains
-s.whatsapp.net
-static.whatsapp.net
+call.whatsapp.com
+chat.whatsapp.com
+facebook.com
+fb.com
+fbcdn.net
+instagram.com
+messenger.com
 mmg.whatsapp.net
 mmi.whatsapp.net
 mms.whatsapp.net
-v.whatsapp.net
-
-# Voice calls
-voip.whatsapp.com
-
-# Meta infrastructure
-facebook.com
-www.facebook.com
-fb.com
-www.fb.com
-messenger.com
-www.messenger.com
-fbcdn.net
-static.xx.fbcdn.net
+s.whatsapp.net
 scontent.xx.fbcdn.net
-
-# Instagram (part of Meta)
-instagram.com
+static.whatsapp.net
+static.xx.fbcdn.net
+status.whatsapp.com
+updates.whatsapp.com
+v.whatsapp.net
+voice.whatsapp.com
+voip.whatsapp.com
+web.whatsapp.com
+whatsapp.com
+www.facebook.com
+www.fb.com
 www.instagram.com
-
-# Generated: 2026-02-26 02:42:42
+www.messenger.com
+www.whatsapp.com
