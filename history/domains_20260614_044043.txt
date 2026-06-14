@@ -36,4 +36,4 @@ scontent.xx.fbcdn.net
 instagram.com
 www.instagram.com
 
-# Generated: 2026-06-05 15:13:46
+# Generated: 2026-06-14 04:40:42
